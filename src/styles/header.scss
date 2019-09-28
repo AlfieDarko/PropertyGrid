@@ -1,0 +1,126 @@
+.header {
+  &__btn {
+    &--main {
+      padding: 1rem 2rem;
+      border-color: #fb826d;
+      background: white;
+      border-width: 1px;
+      color: #fb826d;
+      padding: 2rem 4rem 2rem 4rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__top-left {
+    background: white;
+    grid-column: 2 / 9;
+    padding-top: 3rem;
+    z-index: 4;
+  }
+
+  &__top-right {
+    background: white;
+    grid-column: 10 / 17;
+    padding-top: 3rem;
+
+    &--nav {
+      font-size: 2.2em;
+      display: grid;
+      grid-auto-flow: column;
+
+      a:link {
+        text-decoration: none;
+      }
+
+      a:visited {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__main-left {
+    height: 20vh;
+
+    &-section {
+      grid-row: 3;
+      grid-column: 2/9;
+
+      &--paragraph {
+        font-size: 3rem;
+      }
+
+      &--left {
+        padding: 1rem;
+        background-color: #faf0ef;
+        color: #ff7f6c;
+      }
+
+      &--right {
+        padding: 1rem;
+        color: #9496a2;
+      }
+    }
+
+    &-bottom {
+      background: #01447b;
+      grid-row: 6 / 14;
+      grid-column: 1 / 8;
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      align-items: center;
+    }
+  }
+
+  &__main-right {
+    grid-column: 10 / -1;
+    grid-row: 3/14;
+    z-index: 0;
+    background-image: url("../images/red-building-4.jpeg");
+    background-size: cover;
+
+    &--ui-icons {
+      display: flex;
+      align-items: center;
+
+      span > svg {
+        padding: 0.2rem;
+      }
+    }
+
+    &--slide-counter {
+      display: flex;
+      &-left {
+        font-size: 6rem;
+      }
+      &-right {
+        font-size: 1rem;
+        color: grey;
+        align-self: end;
+      }
+    }
+
+    &--display-pic {
+      height: 6em;
+      width: 6em;
+      border-radius: 100%;
+    }
+
+    &--small-img {
+      padding: 3rem;
+      grid-row: 4/14;
+      background: #fa7f6f;
+      grid-column: 7/13;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import "variables.scss";
+@import "header.scss";
+@import "section1.scss";
+@import "section2.scss";
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.white-text {
+  color: white;
+}
+
+.offwhite-text {
+  color: #83a2be;
+}
+
+.sm-size {
+  font-size: 1em;
+}
+
+.md-size {
+  font-size: 2em;
+}
+
+.lg-size {
+  font-size: 3em;
+}
+
+.xl-size {
+  font-size: 4em;
+}
+
+.xxl-size {
+  font-size: 5em;
+}
+
+.xxxl-size {
+  font-size: 6em;
+}
+
+.xxxxl-size {
+  font-size: 7em;
+}
+
+.blue-bg {
+  background: #01447b;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.reset-lh {
+  line-height: normal;
+}
+
+.md-lh {
+  line-height: 2em;
+}
+
+.container-grid {
+  display: grid;
+  grid-gap: 3em;
+  grid-auto-rows: minmax(1em, auto);
+  grid-template-columns: 2fr repeat(16, 1fr) 2fr;
+  grid-template-rows: repeat(13, auto);
+}
+
+.padding-top-10 {
+  padding-top: 10rem;
+}
